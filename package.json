@@ -36,7 +36,7 @@
   "main": "lib/index.js",
   "scripts": {
     "install": "npm run prepublish",
-    "prepublish": "ls -l . && pwd && babel ./src --out-dir ./lib --source-maps",
+    "prepublish": "babel ./src --out-dir ./lib --source-maps",
     "test": "mocha --compilers js:babel-core/register",
     "cover": "babel-node node_modules/.bin/babel-istanbul cover _mocha",
     "lint": "eslint --color src/**/*.js"
