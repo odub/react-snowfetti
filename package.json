@@ -41,6 +41,7 @@
   },
   "main": "lib/index.js",
   "scripts": {
+    "preinstall": "npm run prepublish",
     "prepublish": "babel src --out-dir lib --source-maps",
     "test": "mocha --compilers js:babel-core/register",
     "cover": "babel-node node_modules/.bin/babel-istanbul cover _mocha",
