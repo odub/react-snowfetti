@@ -172,7 +172,7 @@ export default React.createClass({
 				width={ width }
 				height={ height }
 				style={ styles }
-				ref={ canvas => this.ctx = canvas.getContext('2d') }
+				ref={ canvas => this.ctx = canvas && canvas.getContext('2d') }
 				onMouseMove={ this.handleMouseMove }
 			>
 				<h3>
